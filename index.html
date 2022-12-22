@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+</head>
+<body>
+    <table id="calculator">
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <!-- clr() function will call clr to clear all value -->
+            <td ><input id="clearButton" type="button" value="c" class="colorSpecial" onclick="clr()"></td>
+        </tr>
+        <!-- create button and assign value to each button
+            use the function dis("x") to dis value -->
+        <tr>
+            
+            <td><input type="button" value="1" onclick="dis('1')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="2" onclick="dis('2')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="3" onclick="dis('3')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="/" onclick="dis('/')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="5" onclick="dis('5')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="6" onclick="dis('6')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="*" onclick="dis('*')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="8" onclick="dis('8')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="9" onclick="dis('9')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="-" onclick="dis('-')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="dis('0')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="." onclick="dis('.')" onkeydown="myFunction(event)"></td>
+            <!-- Solve function equations -->
+            <td><input type="button" value="=" onclick="solve()"  class="colorSpecial"onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="+" onclick="dis('+')" onkeydown="myFunction(event)"></td>
+        </tr>
+    </table>
+</body>
+</html>
