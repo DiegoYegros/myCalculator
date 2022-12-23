@@ -10,9 +10,11 @@
     <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
 </head>
 <body>
+    <img id = "Roska" src="Assets/roshka.svg" alt="">
+    <div class="container">
     <table id="calculator">
         <tr>
-            <td colspan="3"><input type="text" id="result"></td>
+            <td colspan="3"><input type="text" id="result" disabled></td>
             <!-- clr() function will call clr to clear all value -->
             <td ><input id="clearButton" type="button" value="c" class="colorSpecial" onclick="clr()"></td>
         </tr>
@@ -45,5 +47,6 @@
             <td><input type="button" value="+" onclick="dis('+')" onkeydown="myFunction(event)"></td>
         </tr>
     </table>
+    </div>
 </body>
 </html>
